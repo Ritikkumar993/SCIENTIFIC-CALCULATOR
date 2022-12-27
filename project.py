@@ -37,6 +37,10 @@ def rad_to_deg():
 def deg_to_rad():
     num1 = float(input("Enter the deg:"))
     print(math.radians(num1))
+def rem():
+    num1 = int(input())
+    num2 =int(input())
+    print(num1%num2)
 print("1. ADD")
 print("2. SUB")
 print("3. MUL")
@@ -48,7 +52,8 @@ print("8. COS")
 print("9. TAN")
 print("10.RAD_TO_DEG")
 print("11.DEG_TO_RAD")
-print("12.EXIT")
+print("12.rem")
+print("13.EXIT")
 while True:
     a=int(input("ENTER YOUR CHOISE:"))
     if a==1:
@@ -74,6 +79,9 @@ while True:
     elif a==11:
         deg_to_rad()
     elif a==12:
+        rem()
+        
+    elif a==13:
         exit()
     else:
         print("YOU HAVE ENTER THE WRONG NUMBER")
